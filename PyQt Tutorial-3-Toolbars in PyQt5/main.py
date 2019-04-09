@@ -17,7 +17,7 @@ class TutorialWindow(QMainWindow):
 
         exit_action = QAction(QIcon('icon_exit.png'), '&Exit', self)
         exit_action.setShortcut('Ctrl+Q')
-        exit_action.setStatusTip('Save program')  # show when move mouse to the icon
+        exit_action.setStatusTip('Exit program')  # show when move mouse to the icon
         exit_action.triggered.connect(qApp.quit)
 
         self.toolbar.addAction(save_action)
